@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240117024217">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap&_v=20240117024217" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css?_v=20240117024217">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css?_v=20240117024217" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header__body body-header">
+			<div class="body-header__container">
+				<div class="body-header__content">
+					<a class="body-header__logo" href="#">
+						<img src="img/icons/logo.svg?_v=1705448538004" alt="">
+					</a>
+					<div class="body-header__actions actions-header">
+						<div class="actions-header__img"></div>
+						<div class="actions-header__items">
+							<div class="actions-header__item-title">Яндекс Карты</div>
+							<div class="actions-header__item-rating rating rating_set">
+								<div class="rating__body">
+									<div class="rating__active"></div>
+									<div class="rating__items">
+										<input type="radio" class="rating__item" value="1" name="rating">
+										<input type="radio" class="rating__item" value="2" name="rating">
+										<input type="radio" class="rating__item" value="3" name="rating">
+										<input type="radio" class="rating__item" value="4" name="rating">
+										<input type="radio" class="rating__item" value="5" name="rating">
+									</div>
+								</div>
+								<div class="rating__value">5</div>
+							</div>
+							<div class="actions-header__text">81 отзыв • 100 оценок</div>
+						</div>
+					</div>
+					<div class="body-header__location">
+						<div class="body-header__location-text">Производство кухонь на заказ</div>
+						<div class="body-header__location-adress">Анапа, ул. Крылова, д. 27</div>
+					</div>
+					<ul class="body-header__contacts contacts-header">
+						<li class="contacts-header__item">
+							<a href="#" class="contacts-header__link whatsapp"></a>
+						</li>
+						<li class="contacts-header__item">
+							<a href="#" class="contacts-header__link telegram"></a>
+						</li>
+						<li class="contacts-header__item">
+							<a href="tel:79883117788" class="contacts-header__link phone">
+								<span>+7 (988)-311-77-88</span>
+							</a>
+						</li>
+					</ul>
+					<button data-fancybox href="#hidden" class="body-header__btn btn">Заказать звонок</button>
+				</div>
+			</div>
+			<div class="popup" style="display: none; width: 500px;" id="hidden">
+				<h2 class="popup__title">Заказать звонок</h2>
+				<form action="#" class="popup__form">
+					<input id="name" type="text" data-required="name" class="popup__input" placeholder="Ваше имя">
+					<input id="phone" type="tel" data-required="tel" class="popup__input" placeholder="Ваш телефон">
+					<button type="submit" class="popup__btn btn">Заказать</button>
+				</form>
+			</div>
+		</header>
+		<div class="img-section">
+			<picture><source srcset="img/first_block.webp" type="image/webp"><img src="img/first_block.png?_v=1705448538004" alt="Фоновое изображение первого блока"></picture>
+		</div>
+		<main class="page">
+
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<div class="main-block__content block-content">
+							<h1 class="block-content__title">
+								Изготовим роскошную дизайнерскую кухню
+							</h1>
+							<div class="block-content__info">
+								<img src="img/icons/wallet.svg?_v=1705448538004" alt="Изображение кошелька">
+								<div class="block-content__info-text">
+									<span>Цена на 12-24% ниже,</span> чем у посредников
+								</div>
+							</div>
+							<div class="block-content__price price-block">
+								<div class="price-block__text">
+									Рассчитаем стоимость кухни-мечты
+								</div>
+								<button data-fancybox href="#hidden" type="submit" class="price-block__btn btn">
+									Заказать расчёт
+								</button>
+							</div>
+						</div>
+						<div class="main-block__media media-block">
+							<div class="media-block__body">
+								<div class="media-block__tips">
+									<div class="media-block__tip_1">
+										<p class="media-block__text">
+											Огромный выбор бытовой техники
+										</p>
+									</div>
+									<div class="media-block__tip_2">
+										<p class="media-block__text">
+											Изысканный гарнитур любого размера
+										</p>
+									</div>
+									<div class="media-block__tip_3">
+										<p class="media-block__text">
+											Выдающиеся сорта древесины
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__advantages advantages-block">
+				<div class="advantages-block__container">
+					<div class="advantages-block__img">
+						<picture><source srcset="img/second_block.webp" type="image/webp"><img src="img/second_block.png?_v=1705448538004" alt="Фото кухни-мечты"></picture>
+					</div>
+					<div class="advantages-block__body advantage-main">
+						<h2 class="advantage-main__title title">Наши преимущества</h2>
+						<div class="advantage-main__content">
+							<div class="advantage-main__item">
+								<div class="advantage-main__icon">
+									<img src="img/icons/kitchen.svg?_v=1705448538004" alt="Иконка">
+								</div>
+								<div class="advantage-main__text">
+									<span>C 2000 г на рынке</span> наши кухни выбрали 10 000+ семей
+								</div>
+							</div>
+							<div class="advantage-main__item">
+								<div class="advantage-main__icon">
+									<img src="img/icons/date.svg?_v=1705448538004" alt="Иконка">
+								</div>
+								<div class="advantage-main__text">
+									<span>Сжатые сроки</span> изготовление кухни от 20 дней
+								</div>
+							</div>
+							<div class="advantage-main__item">
+								<div class="advantage-main__icon">
+									<img src="img/icons/project.svg?_v=1705448538004" alt="Иконка">
+								</div>
+								<div class="advantage-main__text">
+									<span>Дизайн проект</span> бесплатно за 30 минут
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__project projects-block">
+				<div class="projects-block__container">
+					<div class="projects-block__body">
+						<h2 class="projects-block__title title">Посмотрите наши работы</h2>
+						<div class="projects-block__filter projects-filter">
+							<div class="projects-filter__content">
+								<div class="projects-filter__dropdown">
+									<div class="projects-filter__dropdown-body">
+										<button data-path="one" class="dropdown__btn btn">
+											<span>Планировка</span>
+										</button>
+										<ul data-target="one" class="dropdown__list">
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_1" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_1" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">
+															Прямые <sup>100</sup>
+														</span>
+													</label>
+												</div>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<input id="c_2" class="list-item__checkbox-input" type="checkbox">
+												<label for="c_2" class="list-item__checkbox-label">
+													<span class="list-item__checkbox-text">
+														Угловые <sup>134</sup>
+													</span>
+												</label>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<input id="c_3" class="list-item__checkbox-input" type="checkbox">
+												<label for="c_3" class="list-item__checkbox-label">
+													<span class="list-item__checkbox-text">
+														С островом <sup>250</sup>
+													</span>
+												</label>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<input id="c_4" class="list-item__checkbox-input" type="checkbox">
+												<label for="c_4" class="list-item__checkbox-label">
+													<span class="list-item__checkbox-text">
+														Трёхъярусные <sup>120</sup>
+													</span>
+												</label>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<input id="c_5" class="list-item__checkbox-input" type="checkbox">
+												<label for="c_5" class="list-item__checkbox-label">
+													<span class="list-item__checkbox-text">
+														П-образные <sup>170</sup>
+													</span>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="projects-filter__dropdown-body">
+										<button data-path="two" class="dropdown__btn btn">
+											<span>Стиль кухни</span>
+										</button>
+										<ul data-target="two" class="dropdown__list">
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_6" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_6" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">
+															Прямые <sup>100</sup>
+														</span>
+													</label>
+												</div>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_7" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_7" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">
+															Прямые <sup>100</sup>
+														</span>
+													</label>
+												</div>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_8" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_8" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">
+															Прямые <sup>100</sup>
+														</span>
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="projects-filter__dropdown-body">
+										<button data-path="three" class="dropdown__btn btn">
+											<span>Цвет</span>
+										</button>
+										<ul data-target="three" class="dropdown__list">
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_9" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_9" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">Красный</span>
+													</label>
+												</div>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_10" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_10" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">Зеленый</span>
+													</label>
+												</div>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_11" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_11" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">Песочный</span>
+													</label>
+												</div>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_12" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_12" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">Серый</span>
+													</label>
+												</div>
+											</li>
+											<li class="dropdown__list-item list-item">
+												<div class="list-item__checkbox">
+													<input id="c_13" class="list-item__checkbox-input" type="checkbox">
+													<label for="c_13" class="list-item__checkbox-label">
+														<span class="list-item__checkbox-text">Синий</span>
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="projects-filter__btn">
+									<button class="projects-filter__btn-send btn" disabled>Применить</button>
+									<button class="projects-filter__btn-cancel btn">Сбросить</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="projects-block__catalog catalog-products">
+							<div class="catalog-products__body">
+								<div class="product-card">
+									<div class="product-card__inner">
+										<div id="top_1" class="product-card__slider">
+											<div class="product-card__swiper">
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+										</div>
+										<div id="small_1" thumbsSlider="" class="product-card__thumbs thumbs-images">
+											<div class="thumbs-images__swiper">
+												<div class="thumbs-images__slide-ibg slide-ibg-1">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-1">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-1">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-1">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+											<div class="thumbs-images__controll controll-images">
+												<div class="controll-images__fraction fraction-controll">
+													<span class="fraction-controll__current current-1">01</span>
+													<span class="fraction-controll__all all-1">10</span>
+													<div class="controll-images__arrow-prev prev-1"></div>
+													<div class="controll-images__arrow-next next-1"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__body card-body">
+										<div class="card-body__info">
+											<h3 class="card-body__info-title">Кухня 097 минимализм</h3>
+											<p class="card-body__info-text">Угловая белая кухня со столешницей под бетон.</p>
+											<ul class="card-body__info-price info-price">
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Эконом</h4>
+													<p class="info-price__item-text">168 000 р.</p>
+												</li>
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Стандарт</h4>
+													<p class="info-price__item-text">217 000 р.</p>
+												</li>
+												<li class="info-price__item null">
+													<h4 class="info-price__item-title">Премиум</h4>
+													<p class="info-price__item-text">270 000 р.</p>
+												</li>
+											</ul>
+											<div class="card-body__info-param">
+												<span>Длина кухни:</span> 4900 мм
+											</div>
+											<div class="card-body__btn">
+												<button class="card-body__btn-more btn">Подробнее</button>
+												<button class="card-body__btn-calc btn">
+													Расчет стоимости
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-card">
+									<div class="product-card__inner">
+										<div id="top_2" class="product-card__slider">
+											<div class="product-card__swiper">
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+										</div>
+										<div id="small_2" thumbsSlider="" class="product-card__thumbs thumbs-images">
+											<div class="thumbs-images__swiper">
+												<div class="thumbs-images__slide-ibg slide-ibg-2">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-2">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-2">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-2">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-2">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+											<div class="thumbs-images__controll controll-images">
+												<div class="controll-images__fraction fraction-controll">
+													<span class="fraction-controll__current current-2">01</span>
+													<span class="fraction-controll__all all-2">10</span>
+													<div class="controll-images__arrow-prev prev-2"></div>
+													<div class="controll-images__arrow-next next-2"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__body card-body">
+										<div class="card-body__info">
+											<h3 class="card-body__info-title">Кухня 097 минимализм</h3>
+											<p class="card-body__info-text">Угловая белая кухня со столешницей под бетон.</p>
+											<ul class="card-body__info-price info-price">
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Эконом</h4>
+													<p class="info-price__item-text">168 000 р.</p>
+												</li>
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Стандарт</h4>
+													<p class="info-price__item-text">217 000 р.</p>
+												</li>
+												<li class="info-price__item null">
+													<h4 class="info-price__item-title">Премиум</h4>
+													<p class="info-price__item-text">270 000 р.</p>
+												</li>
+											</ul>
+											<div class="card-body__info-param">
+												<span>Длина кухни:</span> 4900 мм
+											</div>
+											<div class="card-body__btn">
+												<button class="card-body__btn-more btn">Подробнее</button>
+												<button class="card-body__btn-calc btn">
+													Расчет стоимости
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-card">
+									<div class="product-card__inner">
+										<div id="top_3" class="product-card__slider">
+											<div class="product-card__swiper">
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+										</div>
+										<div id="small_3" thumbsSlider="" class="product-card__thumbs thumbs-images">
+											<div class="thumbs-images__swiper">
+												<div class="thumbs-images__slide-ibg slide-ibg-3">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-3">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-3">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+											<div class="thumbs-images__controll controll-images">
+												<div class="controll-images__fraction fraction-controll">
+													<span class="fraction-controll__current current-3">01</span>
+													<span class="fraction-controll__all all-3">10</span>
+													<div class="controll-images__arrow-prev prev-3"></div>
+													<div class="controll-images__arrow-next next-3"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__body card-body">
+										<div class="card-body__info">
+											<h3 class="card-body__info-title">Кухня 097 минимализм</h3>
+											<p class="card-body__info-text">Угловая белая кухня со столешницей под бетон.</p>
+											<ul class="card-body__info-price info-price">
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Эконом</h4>
+													<p class="info-price__item-text">168 000 р.</p>
+												</li>
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Стандарт</h4>
+													<p class="info-price__item-text">217 000 р.</p>
+												</li>
+												<li class="info-price__item null">
+													<h4 class="info-price__item-title">Премиум</h4>
+													<p class="info-price__item-text">270 000 р.</p>
+												</li>
+											</ul>
+											<div class="card-body__info-param">
+												<span>Длина кухни:</span> 4900 мм
+											</div>
+											<div class="card-body__btn">
+												<button class="card-body__btn-more btn">Подробнее</button>
+												<button class="card-body__btn-calc btn">
+													Расчет стоимости
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-card">
+									<div class="product-card__inner">
+										<div id="top_4" class="product-card__slider">
+											<div class="product-card__swiper">
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="product-card__slide-ibg">
+													<picture><source srcset="img/product/01.webp" type="image/webp"><img src="img/product/01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+										</div>
+										<div id="small_4" thumbsSlider="" class="product-card__thumbs thumbs-images">
+											<div class="thumbs-images__swiper">
+												<div class="thumbs-images__slide-ibg slide-ibg-4">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-4">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-4">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-4">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+												<div class="thumbs-images__slide-ibg slide-ibg-4">
+													<picture><source srcset="img/product/preview_01.webp" type="image/webp"><img src="img/product/preview_01.png?_v=1705448538004" alt=""></picture>
+												</div>
+											</div>
+											<div class="thumbs-images__controll controll-images">
+												<div class="controll-images__fraction fraction-controll">
+													<span class="fraction-controll__current current-4">01</span>
+													<span class="fraction-controll__all all-4">10</span>
+													<div class="controll-images__arrow-prev prev-4"></div>
+													<div class="controll-images__arrow-next next-4"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product-card__body card-body">
+										<div class="card-body__info">
+											<h3 class="card-body__info-title">Кухня 097 минимализм</h3>
+											<p class="card-body__info-text">Угловая белая кухня со столешницей под бетон.</p>
+											<ul class="card-body__info-price info-price">
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Эконом</h4>
+													<p class="info-price__item-text">168 000 р.</p>
+												</li>
+												<li class="info-price__item">
+													<h4 class="info-price__item-title">Стандарт</h4>
+													<p class="info-price__item-text">217 000 р.</p>
+												</li>
+												<li class="info-price__item null">
+													<h4 class="info-price__item-title">Премиум</h4>
+													<p class="info-price__item-text">270 000 р.</p>
+												</li>
+											</ul>
+											<div class="card-body__info-param">
+												<span>Длина кухни:</span> 4900 мм
+											</div>
+											<div class="card-body__btn">
+												<button class="card-body__btn-more btn">Подробнее</button>
+												<button class="card-body__btn-calc btn">
+													Расчет стоимости
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+
+			</div>
+		</footer>
+	</div>
+	<!-- <div class="hystmodal" id="feedback" aria-hidden="true">
+  <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <button data-hystclose class="hystmodal__close">Закрыть</button>
+            HTML код модального окна
+          Показать окно 
+      </div>
+  </div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20240117024218"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10.3.1/swiper.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
